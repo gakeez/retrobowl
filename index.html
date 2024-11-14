@@ -1,292 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-RNSGEE2716"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <a><a>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta charset="utf-8"/>
+        <title>Bandruf#1</title>
+        <style>
+            body {
+              background: #000;
+              color:#cccccc;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+              overflow: hidden;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            div.gm4html5_div_class
+            {
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            /* START - Login Dialog Box */
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            /* END - Login Dialog Box */
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
+            }
+        </style>
+    </head>
 
-      gtag("config", "G-RNSGEE2716");
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Play Retro Bowl Unblocked - The classic American football game. Experience the ultimate retro-style football management simulation game online for free"
-    />
-    <meta
-      name="keywords"
-      content="retro bowl unblocked,retro bowl game,american football game,football manager,retro games,sports simulation,unblocked games"
-    />
-    <title>Retro Bowl Unblocked - Play Free Online</title>
-
-    <!-- Open Graph Meta Tags for better social sharing -->
-    <meta property="og:title" content="Retro Bowl Unblocked" />
-    <meta
-      property="og:description"
-      content="Play Retro Bowl Unblocked - The classic American football game online for free"
-    />
-    <meta property="og:type" content="website" />
-
-    <!-- Additional SEO Meta Tags -->
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Retro Bowl" />
-    <link rel="canonical" href="https://retro-bowl-unblocked.com/" />
-
-    <!-- Additional domain-specific meta tags -->
-    <meta property="og:url" content="https://retro-bowl-unblocked.com/" />
-    <meta property="og:site_name" content="Retro Bowl Unblocked" />
-
-    <!-- Website Icon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico" />
-
-    <!-- Base Styles -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        background-color: #e8f4fc;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .container {
-        flex: 1;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      header {
-        background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
-        color: white;
-        text-align: center;
-        padding: 1.5rem;
-        box-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
-      }
-
-      header h1 {
-        font-size: 2.5em;
-        margin-bottom: 0.3em;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      }
-
-      footer {
-        background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        width: 100%;
-        box-shadow: 0 -2px 10px rgba(33, 150, 243, 0.2);
-      }
-
-      .game-container {
-        width: 100%;
-        max-width: 1024px;
-        height: 768px;
-        margin: 0 auto;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(33, 150, 243, 0.15);
-        overflow: hidden;
-        border: 3px solid #2196f3;
-      }
-
-      #game-frame {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-
-      .game-description {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 30px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(33, 150, 243, 0.15);
-      }
-
-      .game-description h2 {
-        color: #1565c0;
-        margin-bottom: 20px;
-        font-size: 1.8em;
-      }
-
-      .game-description h3 {
-        color: #2196f3;
-        margin: 25px 0 15px;
-        font-size: 1.4em;
-      }
-
-      .game-description p {
-        margin-bottom: 15px;
-        line-height: 1.8;
-        color: #37474f;
-      }
-
-      .game-description ul {
-        margin: 15px 0;
-        padding-left: 20px;
-      }
-
-      .game-description li {
-        margin-bottom: 12px;
-        color: #37474f;
-      }
-
-      .game-description li strong {
-        color: #1976d2;
-      }
-
-      .cta-section {
-        margin-top: 30px;
-        padding: 25px;
-        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-        border-radius: 10px;
-        text-align: center;
-        border: 2px solid #90caf9;
-      }
-
-      .cta-section p {
-        color: #1565c0;
-        font-weight: bold;
-        margin: 0;
-      }
-
-      @media (max-width: 768px) {
-        .game-description {
-          margin: 20px;
-          padding: 20px;
-        }
-
-        header h1 {
-          font-size: 2em;
-        }
-      }
-
-      .game-image {
-        margin: 30px 0;
-        text-align: center;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 20px rgba(33, 150, 243, 0.15);
-      }
-
-      .game-image img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-      }
-
-      @media (max-width: 768px) {
-        .game-image {
-          margin: 20px -20px;
-          border-radius: 0;
-        }
-      }
-
-      .loading-notice {
-        width: 100%;
-        max-width: 1024px;
-        text-align: center;
-        color: #1565C0;
-        padding: 0 0 4px;
-        font-size: 0.9em;
-      }
-
-      @media (max-width: 768px) {
-        .loading-notice {
-          margin: 0 20px 2px;
-          font-size: 0.85em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Retro Bowl Unblocked</h1>
-      <p>Play The Classic Football Game Online</p>
-    </header>
-
-    <div class="container">
-        <div class="loading-notice">
-            Please be patient during the initial loading - it may take a few moments.
-        </div>
-        <div class="game-container">
-            <iframe id="game-frame" src="game.html" allowfullscreen></iframe>
+    <body>
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+        <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;"/>
+            <!-- Create the canvas element the game draws to -->
+            <canvas id="canvas">
+                     <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+            <script>
+                document.querySelector('canvas').width = window.innerWidth;
+                document.querySelector('canvas').height = window.innerHeight;
+            </script>
         </div>
 
-      <article class="game-description">
-        <h2>Retro Bowl Unblocked: Your Ultimate Football Experience Anytime, Anywhere</h2>
-
-        <h3>What is Retro Bowl Unblocked?</h3>
-        <p>Retro Bowl unblocked brings the excitement of classic American football to modern browsers, offering a nostalgic yet fresh gaming experience. With its pixelated graphics and engaging gameplay, Retro Bowl unblocked provides players with a unique blend of retro visuals and smooth, modern mechanics. Whether you're revisiting the golden era of football video games or diving into the world of gridiron action for the first time, Retro Bowl unblocked is the perfect game to experience football at its best—completely free and unblocked.</p>
-
-        <div class="game-image">
-            <img src="retro-bowl-players.jpg" alt="Retro Bowl Players in action - Pixel art football gameplay" loading="lazy">
-        </div>
-
-        <h3>Why Choose Retro Bowl Unblocked?</h3>
-        <p>Retro Bowl unblocked isn't just about reliving the past; it's about enjoying a game that perfectly balances nostalgia with contemporary accessibility. With no restrictions on where or when you can play, Retro Bowl unblocked delivers a seamless experience straight to your browser. From managing your team to calling the perfect plays on the field, Retro Bowl unblocked offers deep gameplay that will keep you coming back for more, whether you're a hardcore football fan or a casual gamer.</p>
-
-        <h3>Who Can Play Retro Bowl Unblocked?</h3>
-        <p>Retro Bowl unblocked is designed for everyone—from seasoned football strategists to players looking for a quick, enjoyable game during their downtime. The simplicity of the controls makes it accessible for beginners, while its strategic depth ensures that even the most experienced players will find it challenging and rewarding. Whether you're on a break at school, at work, or just looking to unwind, Retro Bowl unblocked is the perfect game to fit into your day.</p>
-
-        <h3>How to Play Retro Bowl Unblocked</h3>
-        <p>Retro Bowl unblocked allows players to jump straight into the action, whether on a desktop or mobile device. Simply open the game in your browser and start managing your team. Control every aspect of your team's performance, from drafting players and building a strong roster to making crucial decisions during high-stakes matchups. The intuitive controls and dynamic gameplay ensure a smooth and enjoyable experience, while the challenge of building a winning team keeps the excitement high.</p>
-
-        <h3>Key Features of Retro Bowl Unblocked</h3>
-        <ul>
-          <li><strong>Unrestricted Access:</strong> Retro Bowl unblocked is available across all platforms and free to play with no restrictions. Play directly from your browser without limitations.</li>
-          <li><strong>Complete Team Control:</strong> Manage your roster, draft new players, and make critical decisions that impact the outcome of each game.</li>
-          <li><strong>Classic Pixel Art Style:</strong> Enjoy the charming 8-bit graphics that evoke the golden age of football games while providing a fresh, modern gameplay experience.</li>
-          <li><strong>Engaging Gameplay:</strong> Retro Bowl unblocked offers smooth controls, responsive mechanics, and thrilling football action that will keep you entertained for hours.</li>
-        </ul>
-
-        <h3>Strategic Depth in Retro Bowl Unblocked</h3>
-        <p>At first glance, Retro Bowl unblocked may seem simple, but the game offers surprising depth in team management and on-field strategy. Each decision—whether it's choosing the right plays, managing your salary cap, or making adjustments to your roster—has a direct impact on your success. The strategic elements of Retro Bowl unblocked keep players engaged, ensuring no two games are ever the same.</p>
-
-        <h3>Why Play Retro Bowl Unblocked Online?</h3>
-        <p>With Retro Bowl unblocked, you can enjoy the game anytime and anywhere. No need to worry about downloading or installing software—simply open your browser and start playing. The game's accessibility and straightforward setup make it the perfect choice for gamers on the go. Whether you're at home, at school, or at work, Retro Bowl unblocked ensures you can always get your football fix.</p>
-
-        <h3>The Latest Update: Retro Bowl College</h3>
-        <p>For fans of college football, the latest version of Retro Bowl brings the thrill of NCAA football to the game. In Retro Bowl College, you can build your team from the ground up, recruit top-tier college athletes, and lead your squad to the National Championship. Retro Bowl College adds a whole new dimension to the already immersive experience, giving players the chance to manage a collegiate dynasty and compete in the world of college football.</p>
-
-        <h3>Tips for Winning Retro Bowl Unblocked</h3>
-        <ul>
-          <li><strong>Master the Draft:</strong> Choose players with a balanced skill set. Building a well-rounded team will help you perform consistently across the season.</li>
-          <li><strong>Focus on Defense:</strong> A strong defense is crucial in Retro Bowl unblocked. Don't neglect your defense while focusing on offense.</li>
-          <li><strong>Experiment with Plays:</strong> Practice different strategies and formations to see what works best for your team's strengths.</li>
-        </ul>
-
-        <div class="cta-section">
-          <p>Ready to build your dynasty and lead your team to victory? Start playing Retro Bowl unblocked now and experience why this classic has captured the hearts of millions of players worldwide!</p>
-        </div>
-      </article>
-    </div>
-
-    <footer>
-      <p>&copy; 2024 Retro Bowl Unblocked. All rights reserved</p>
-    </footer>
-  </body>
+        <!-- Run the game code -->
+        <script type="text/javascript" src="html5game/RetroBowl.js"></script>
+        <script>window.onload = GameMaker_Init;</script>
+    </body>
 </html>
